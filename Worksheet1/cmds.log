@@ -1,0 +1,15 @@
+    1  passwd
+    2  wget www.github.com
+    3  ls
+    4  mkdir cs131
+    5  ls
+    6  cd cs131
+    7  git init
+    8  mkdir Worksheet1
+    9  ls
+   10  git status
+   11  cd Worksheet1
+   12  cd ..
+   13  git add --all
+   14  cd Worksheet1
+   15  history > cmds.log
