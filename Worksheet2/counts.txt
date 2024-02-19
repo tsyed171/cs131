@@ -1,0 +1,2 @@
+238 : Line count of all Music records in Global Youtube Statistics
+830 : Word count of all Music records in Global Youtube Statistics

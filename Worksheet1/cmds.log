@@ -13,3 +13,20 @@
    13  git add --all
    14  cd Worksheet1
    15  history > cmds.log
+   16  cd ..
+   17  git add --all
+   18  git commit -m 
+   19  git commit -m "initial commit"
+   20   git config --global user.email "tsyedew@gmail.com"
+   21  git commit -m "initial commit"
+   22   git config --global user.email "tsyedew@gmail.com"
+   23  git config --global user.name "tsyed171"
+   24  git commit -m "initial commit"
+   25  git branch -M master
+   26  git remote add origin https://github.com/tsyed171/cs131.git
+   27  git push -u origin master
+   28  ls
+   29  cd cs131
+   30  ls
+   31  cd Worksheet1
+   32  history > cmds.log

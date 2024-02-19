@@ -1,0 +1,76 @@
+    1  passwd
+    2  wget www.github.com
+    3  ls
+    4  mkdir cs131
+    5  ls
+    6  cd cs131
+    7  git init
+    8  mkdir Worksheet1
+    9  ls
+   10  git status
+   11  cd Worksheet1
+   12  cd ..
+   13  git add --all
+   14  cd Worksheet1
+   15  history > cmds.log
+   16  cd ..
+   17  git add --all
+   18  git commit -m 
+   19  git commit -m "initial commit"
+   20   git config --global user.email "tsyedew@gmail.com"
+   21  git commit -m "initial commit"
+   22   git config --global user.email "tsyedew@gmail.com"
+   23  git config --global user.name "tsyed171"
+   24  git commit -m "initial commit"
+   25  git branch -M master
+   26  git remote add origin https://github.com/tsyed171/cs131.git
+   27  git push -u origin master
+   28  ls
+   29  cd cs131
+   30  ls
+   31  cd Worksheet1
+   32  history > cmds.log
+   33  ls
+   34  nano cmds.log
+   35  cd ..
+   36  git branch -M master
+   37  git remote add origin https://github.com/tsyed171/cs131.git
+   38  git push -u origin master
+   39  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+   40  ls
+   41  rm 'Global YouTube Statistics.csv' 
+   42  ls
+   43  cd cs131
+   44  ls
+   45  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+   46  ls
+   47  grep 'United States' 'Global YouTube Statistics.csv' 
+   48  grep 'Music' 'Global YouTube Statistics.csv' 
+   49  grep 'Music' 'Global YouTube Statistics.csv' | wc -l
+   50  grep 'Music' 'Global YouTube Statistics.csv' | wc -l > counts.txt
+   51  ls
+   52  tail counts.txt
+   53  grep 'Music' 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+   54  tail counts.txt
+   55  vi counts.txt
+   56  cat counts.txt
+   57  mkdir Worksheet2
+   58  ls
+   59  mv counts.txt ~/Worksheet2
+   60  ls
+   61  cd Worksheet2
+   62  ls
+   63  cd ..
+   64  ls
+   65  cd Worksheet2
+   66  cat Worksheet22
+   67  cat Worksheet2
+   68  ls -latr
+   69  mv Worksheet2 counts.txt
+   70  ls
+   71  vi counts.txt
+   72  mv counts.txt ~/cs131/Worksheet2
+   73  cd cs131
+   74  cd Worksheet2
+   75  ls
+   76  history > cmds.log
