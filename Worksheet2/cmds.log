@@ -74,3 +74,36 @@
    74  cd Worksheet2
    75  ls
    76  history > cmds.log
+   77  ls
+   78  cd ..
+   79  ls
+   80  rm 'Global YouTube Statistics.csv' 
+   81  ls
+   82  git status
+   83  git add .
+   84  git status
+   85  git push
+   86  git status
+   87  git commit -m "Adding Worksheet2"
+   88  git push --set-upstream origin master
+   89  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+   90  ls
+   91  grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv
+
+grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv
+   92  :wq
+   93  grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv'
+   94  grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv'| wc -l
+   95  grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv'| wc -l > cs131/Worksheet2/counts.txt
+   96  cd cs131
+   97  cd Worksheet2
+   98  vi counts.txt
+   99  grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv'| wc -w >> cs131/Worksheet2/counts.txt
+  100  cd ..
+  101  ls
+  102  grep -E "([^,]*,){4}.*Music" 'Global YouTube Statistics.csv'| wc -w >> cs131/Worksheet2/counts.txt
+  103  cd cs131
+  104  cd Worksheet2
+  105  vi counts.txt
+  106  cd cs131
+  107  history > cmds.log
