@@ -1,0 +1,51 @@
+    1  history
+    2  mkdir Assignment1
+    3  rmdir Assignment1
+    4  ls
+    5  cd cd131
+    6  cd cs131
+    7  ls
+    8  mkdir Assignment1 ----- TASK 1
+    9  ls
+   10  cd Assignment1
+   11  ls
+   12  touch Assignment1.txt
+   13  ls
+   14  SHELL
+   15  echo $SHELL ------TASK 2
+   16  echo $HOME ------Task 2
+   17  /etc/passwd
+   18  sudo /etc/passwd
+   19  /etc/group
+   20  id 
+   21  mkdir myDir ----- Task 4
+   22  ls
+   23  ls -l
+   24  chmod 575 myDir ---- Task 4
+   25  cd myDir
+   26  touch test.txt
+   27  cd ..
+   28  ls
+   29  ls -l
+   30  mkdir myDir2 ------ Task 5
+   31  mkdir myDir3 ------ Task 5
+   32  ls
+   33  cd myDir2
+   34  touch myFile.txt
+   35  ls
+   36  mv myFile.txt Assignment1/myDir3/
+   37  mv myFile.txt ~/cs131/Assignment1/myDir3 ----- Task 6
+   38  free
+   39  man free
+   40  free -m -------------- Task 6
+   41  /etc/os-release
+   42  cat /etc/os-release -------- Task 9
+   43  ls -l /etc/os-release  ----- Task 10
+   44  cd ..
+   45  cat /etc/passwd
+   46  cat /etc/passwd | grep "taliasp24" ------ Task 3
+   47  ls
+   48  vi Assignment1.txt
+   49  free -m
+   50  vi Assignment1.txt 
+   51  history > cmds.log

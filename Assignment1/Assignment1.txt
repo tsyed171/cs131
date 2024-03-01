@@ -1,0 +1,15 @@
+Tasks
+1) Make directory: mkdir Assignment1
+2) Current Shell: /bin/bash
+   Home Directory: /mnt/scratch/FA23_CS131_Ashish/taliasp24
+3) Command: cat /etc/passwd | grep "taliasp24"
+UID: 1188
+Groups: 1188(taliasp24),77(S77)
+4)
+cd in that directory? Yes 
+Can you "ls" it? Yes
+Can you "ls -l" it? Yes
+Can you create files under it? No
+6) Total RAM : 71367 mebibytes
+9) Command: cat /etc/os-release
+10) Permission: rwx
