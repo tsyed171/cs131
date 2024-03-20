@@ -1,0 +1,58 @@
+1.
+a)this command finds all regular files in the /etc directory and its subdirectories. It saves the list of successfully found files into file named one.txt. If there are any errors that occur during the search it saves those error messages into a file named two.txt
+b) one.txt has lines and lines of the command searching through the etc directory ; two.txt has the lines where find was denied permission to enter
+
+2.As per the Dataset, Top 3 [Month, Year] with the most number of YouTube channels created were :
+     1. March,2006 with 15 channels
+     2. July,2014 with 13 channels
+     3. August,2014 with 12 channels
+The command used to find this: cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3
+Explanation: 
+- cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv : gets only the 20 and 21 columns from the csv file and indicated the delimiter is a comma
+- | sort : sorts all the same year and month pairs so they are together when listed
+- | uniq -c : counts frequency of each year and month pair
+- | sort -nr : sorts numerically from highest to lowest
+- | head -3 : prints only top 3 
+
+3.command: ps -u taliasp24 
+result: 
+3439583 ?        00:00:01 systemd
+3439585 ?        00:00:00 (sd-pam)
+3439595 ?        00:00:00 sshd
+3439601 pts/10   00:00:00 bash
+3448801 pts/10   00:00:00 ps
+
+4.
+a)
+b)command output:
+PID TTY          TIME CMD
+3439583 ?        00:00:01 systemd
+3439585 ?        00:00:00 (sd-pam)
+3439595 ?        00:00:00 sshd
+3439601 pts/10   00:00:00 bash
+3450471 ?        00:00:00 sshd
+3450472 pts/32   00:00:00 bash
+3450591 pts/10   00:00:00 vim
+3450732 pts/32   00:00:00 ps
+observation:
+vim is in the list of processes being owned by me; Vim pid: 3450591
+c)
+d)command output:
+   PID TTY          TIME CMD
+3439583 ?        00:00:01 systemd
+3439585 ?        00:00:00 (sd-pam)
+3439595 ?        00:00:00 sshd
+3439601 pts/10   00:00:00 bash
+3450471 ?        00:00:00 sshd
+3450472 pts/32   00:00:00 bash
+3451501 pts/32   00:00:00 ps
+observation:
+the vim process is not visible anymore, meaning the process has been killed
+
+5. init is first process start by kernel and initializes other processes; pid is 1; command in history
+
+6. ps aux ->
+ps : checks all processes running on system
+a : checks processes for all users
+u : presents information in user oriented format
+x : presents processes done aside from terminal like background processes

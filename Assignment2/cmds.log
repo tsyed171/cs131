@@ -1,0 +1,26 @@
+  189  cd cs131
+  190  ls
+  191  mkdir Assignment2
+  192  ls
+  193  cd 
+  194  cd cs131/Assignment2
+  195  ls
+  196  touch Assignment2.txt
+  197  ls
+  198  find /etc -type f > one.txt 2> two.txt -------- Worksheet 2 Qu 1
+  199  ls
+  200  vi Assignment2.txt
+  201  ps -eo pid,comm | grep systemd ---------------- Worksheet 2 Qu 5
+  202  ps -u taliasp24  ------------------------------ Worksheet 2 Qu 4
+  203  vi Assignment2.txt 
+  204  vi Assignment2.txt
+  205  ls
+  206  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv 
+  207  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv | uniq -c | sort -n 
+  208  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv | uniq -c | sort -nr 
+  209  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv | uniq -c | sort -nr | head -3
+  210  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3 --------- Worksheet 2 Qu 2
+  211  cd cs131/Assignment2
+  212  ls
+  213  vi Assignment2.txt 
+  214  history > cmds.log
