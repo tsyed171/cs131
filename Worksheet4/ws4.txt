@@ -1,0 +1,397 @@
+Script started on 2024-04-06 19:16:53-04:00
+bash-4.4$ ls[1Pwlnano ~/.bashrc --------------- TASK 1
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;39H(B[0;7m 3 lines	(B[m[H(B[0;7m  GNU nano 2.9.8   /mnt/scratch/FA23_CS131_Ashish/taliasp24/.bashrc             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[malias l='ls -ltr'[4dalias w='ls -l | wc -l'[A[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>bash-4.4$ nano ~/.bashrc[C[C[C[C[C[C[C[C[C[Cls[K[1Pwl
+total 8 -------- l command output
+-rw-rw-r-- 1 taliasp24 taliasp24   56 Apr  6 18:46 ws4_means.txt
+drwxrwxr-x 2 taliasp24 taliasp24 4096 Apr  6 18:48 Subscribers
+-rw-rw-r-- 1 taliasp24 taliasp24    0 Apr  6 19:16 ws4.txt
+bash-4.4$ wnano ~/.bashrc[C[C[C[C[C[C[C[C[C[Cls[K[1Pw
+4 -------------- w Command output
+bash-4.4$ '[Kls -------------------------TASK 2
+Subscribers  ws4_means.txt  ws4.txt
+bash-4.4$ cd ..
+bash-4.4$ cd ..
+bash-4.4$ ls
+ cs131	'Global YouTube Statistics.csv'   index.html
+bash-4.4$ awk -F '','[C [K[K[K[K[K[K[K[K[K[K[Klscd ..[K[K[K[K[Kawk -F ',' '$8 == "United States"' youtubers.csv[C[K[K[K[K[K[K[K[K[K[K[K[K[K'Global YouTube Statistics.csv' [1@ [1@{}' 'Global YouTube Statistics.csv'  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp}' 'Global YouTube Statistics.csv'  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr}' 'Global YouTube Statistics.csv' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci}' 'Global YouTube Statistics.csv' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn}' 'Global YouTube Statistics.cs[1@v[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct}' 'Global YouTube Statistics.c[1@s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C }' 'Global YouTube Statistics.[1@c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$}' 'Global YouTube Statistics[1@.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3}' 'Global YouTube Statistic[1@s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Cawk -F ',' '$8 == "United States" {print $3}' 'Global YouTube Statisticcs.csv' 
+170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000
+26400000
+26200000
+26100000
+26000000
+25700000
+25700000
+25600000
+25500000
+25400000
+25200000
+25100000
+24800000
+24700000
+24600000
+24600000
+24400000
+24100000
+24100000
+24100000
+24000000
+23900000
+23900000
+23900000
+23800000
+23800000
+23700000
+23700000
+23600000
+23600000
+23300000
+23200000
+23200000
+23100000
+23100000
+22900000
+22700000
+22600000
+22600000
+22600000
+22500000
+22500000
+22300000
+22200000
+22000000
+22000000
+21900000
+21900000
+21900000
+21800000
+21800000
+21600000
+21500000
+21300000
+21300000
+21300000
+21100000
+21000000
+21000000
+21000000
+20900000
+20900000
+20900000
+20700000
+20700000
+20700000
+20500000
+20400000
+20200000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20000000
+20000000
+19800000
+19800000
+19700000
+19700000
+19600000
+19600000
+19600000
+19600000
+19200000
+19100000
+19100000
+19000000
+18800000
+18800000
+18600000
+18400000
+18400000
+18300000
+18300000
+18100000
+18100000
+18000000
+18000000
+18000000
+17900000
+17900000
+17900000
+17900000
+17900000
+17900000
+17800000
+17700000
+17500000
+17400000
+17300000
+17200000
+17100000
+17000000
+16900000
+16900000
+16900000
+16900000
+16700000
+16700000
+16700000
+16600000
+16500000
+16500000
+16500000
+16400000
+16400000
+16300000
+16300000
+16300000
+16300000
+16300000
+16200000
+16200000
+16200000
+16100000
+16100000
+16100000
+15900000
+15900000
+15900000
+15800000
+15700000
+15600000
+15500000
+15500000
+15400000
+15400000
+15400000
+15300000
+15200000
+15100000
+15100000
+15100000
+15000000
+15000000
+15000000
+15000000
+15000000
+14900000
+14900000
+14900000
+14800000
+14800000
+14800000
+14800000
+14800000
+14800000
+14700000
+14700000
+14700000
+14700000
+14700000
+14700000
+14600000
+14600000
+14600000
+14600000
+14500000
+14500000
+14500000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14400000
+14400000
+14300000
+14300000
+14200000
+14100000
+14100000
+14000000
+13900000
+13900000
+13900000
+13900000
+13900000
+13800000
+13600000
+13600000
+13600000
+13500000
+13500000
+13400000
+13400000
+13400000
+13400000
+13400000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13100000
+13100000
+13100000
+13000000
+13000000
+12900000
+12900000
+12900000
+12800000
+12800000
+12700000
+12700000
+12700000
+12700000
+12700000
+12600000
+12600000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12400000
+12400000-----------------------------Get Subscriber Counts for US and INDIA
+bash-4.4$ awk -F ',' '$8 == "United States" {print $3}' 'Global YouTube Statisticcs.csv' > cs131/Worksheet4/Subscribers/United_States.txt
+bash-4.4$ awk -F ',' '$8 == "United States" {print $3}' 'Global YouTube Statisticcs.csv' > cs131/Worksheet4/Subscribers/United_States.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtI.txtn.txtd.txti.txta.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.c[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.cs[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.csv[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.csv'[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.csv' [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" {print $3}' 'Global YouTube Statistics.csv' >[1P cs131/Worksheet4/Subscribers/India.txt[A" {print $3}' 'Global YouTube Statistics.csv' > [1Pcs131/Worksheet4/Subscribers/India.txt[A" {print $3}' 'Global YouTube Statistics.csv' > c[1Ps131/Worksheet4/Subscribers/India.txt[A" {print $3}' 'Global YouTube Statistics.csv' > cs[1P131/Worksheet4/Subscribers/India.txt[A" {print $3}' 'Global YouTube Statistics.csv' > cs1[1P31/Worksheet4/Subscribers/India.txt[A" {print $3}' 'Global YouTube Statistics.csv' > cs13[1P1/Worksheet4/Subscribers/India.txt[AI" {print $3}' 'Global YouTube Statistics.csv' > cs131/Worksheet4/Subscribers/India.txt[An" {print $3}' 'Global YouTube Statistics.csv' > cs131/Worksheet4/Subscribers/India.txt[Ad" {print $3}' 'Global YouTube Statistics.csv' > cs131/Worksheet4/Subscribers/India.txt[Ai" {print $3}' 'Global YouTube Statistics.csv' > cs131/Worksheet4/Subscribers/India.txt[Aa" {print $3}' 'Global YouTube Statistics.csv' > cs131/Worksheet4/Subscribers/India.txt[A
+
+bash-4.4$ cd cs131/Worksheet4/Subscribers
+bash-4.4$ ls
+India.txt  United_States.txt
+bash-4.4$ vi[K[Kwc -l United_States.txt 
+313 United_States.txt
+bash-4.4$ wc -l United_States.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KIndia.txt
+168 India.txt
+bash-4.4$ co[K[Ktotal \[K[K= $()w)[1P$(w)[C[C[Cc) )-) )1)[1P)[1P)l) )U)n)i)t)e)d)_)S)t)a)t)e)s).)t)x)t)[C
+bash-4.4$ echo $total
+313 United_States.txt --------------CALCULATING MEANS
+bash-4.4$ total=$()c)a)t) )U)n)i)t)e)d)_)s)t)[1P)[1P)S)t)a)t)e)s).)t)x)t) )|) )w)c) )-)l)[C
+bash-4.4$ total=$(cat United_States.txt | wc -l)[C[C[C[C[C[C[C[C[C[Cecho $total[K
+313
+bash-4.4$ sum [K=$()a)w)k) )')')[C )U)n)i)t)e)d)_)S)t)a)t)e)s).)t)x)t)[C[1@{[1@}[1@ [1@E[1@N[1@D[1@ [1@{[1@}[1@p[1@r[1@i[1@n[1@t[1@ [1@s[1@u[1@m[1@s[1@u[1@m[1@=[1P[1@+[1@=[1@$[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.4$ echo $sum
+7329500000
+bash-4.4$ echo ()[1P)[C[K'' | bc[C[1@$[1P[1@s[1@c[1@a[1@l[1@e[1@=[1@2[1@;[1@ [1@$[1@s[1@u[1@m[1@/[1@$[1@t[1@o[1@t[1@a[1@l[C[C[C[C[C[C > [K[K
+(standard_in) 1: illegal character: $
+(standard_in) 1: illegal character: $
+bash-4.4$ echo 'scale=2; $sum/$total' | bc [C[1P[1@"[1P[1@"
+23416932.90
+bash-4.4$ echo "scale=2; $sum/$total" | bc >[C[C[C[C[C[C[C[C[C[C[Kpwd
+/mnt/scratch/FA23_CS131_Ashish/taliasp24/cs131/Worksheet4/Subscribers
+bash-4.4$ cd ..
+bash-4.4$ cd ..[2Ppwdecho "scale=2; $sum/$total" | bc >[K
+23416932.90
+bash-4.4$ echo "scale=2; $sum/$total" | bc > ws4_means.txt
+bash-4.4$ cd 
+bash-4.4$ 
+bash-4.4$ cd Subscrie[Kbers
+bash: cd: Subscribers: No such file or directory
+bash-4.4$ ls
+ cs131	'Global YouTube Statistics.csv'   index.html
+bash-4.4$ cd 131/Worksheet4
+bash: cd: 131/Worksheet4: No such file or directory
+bash-4.4$ cd 131/Worksheet4[Cc131/Worksheet4s131/Worksheet4
+bash-4.4$ ls
+Subscribers  ws4_means.txt  ws4.txt
+bash-4.4$ vi ws4_means.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"ws4_means.txt" 1L, 12C[1;1H23416932.90
+[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?25h[?25lU23416932.90U[?25h[?25ln23416932.90Un[?25h[?25li23416932.90Uni[?25h[?25lt23416932.90Unit[?25h[?25le23416932.90Unite[?25h[?25ld23416932.90[1;7H[?25h[?25l 23416932.90[1;8H[?25h[?25lS23416932.90[1;9H[?25h[?25lt23416932.90[1;10H[?25h[?25la23416932.90[1;11H[?25h[?25lt23416932.90[1;12H[?25h[?25le23416932.90[1;13H[?25h[?25ls23416932.90[1;14H[?25h[?25l 23416932.90[1;15H[?25h[?25lM23416932.90[1;16H[?25h[?25le23416932.90[1;17H[?25h[?25la23416932.90[1;18H[?25h[?25ln23416932.90[1;19H[?25h[?25l 23416932.90[1;20H[?25h[?25lS23416932.90[1;21H[?25h[?25lu23416932.90[1;22H[?25h[?25lb23416932.90[1;23H[?25h[?25ls23416932.90[1;24H[?25h[?25lc23416932.90[1;25H[?25h[?25lr23416932.90[1;26H[?25h[?25li23416932.90[1;27H[?25h[?25lb23416932.90[1;28H[?25h[?25le23416932.90[1;29H[?25h[?25lr23416932.90[1;30H[?25h[?25ls23416932.90[1;31H[?25h[?25l:23416932.90[1;32H[?25h23416932.90[24;1H[K[1;42H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"ws4_means.txt" 1L, 43C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ cd Subscribers/
+bash-4.4$ ls
+India.txt  United_States.txt
+bash-4.4$ lscd Subscribers/[C[C[C[C[C[C[C[C[C[Cvi ws4_means.txt [C[C[C[C[C[C[C[C[C[Cls[Kcd cs131/Worksheet4[C[C[C[C[C[C[C[C[C[C[C[C[C[2P131/Worksheet4[C[C[C[C[C[C[C[C[C[Cls[Kcd Subscribers[Kecho "scale=2; $sum/$total" | bc > ws4_means.txt[K[C[C[C[C[C[C[C[C[C[Ccd ..[K[2Ppwdecho "scale=2; $sum/$total" | bc [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'scale=2; $sum/$total'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$sum[Ksum=$(awk '{sum+=$1} END {print sum}' United_States.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)[1P.txt)I.txt)n.txt)d.txt)i.txt)a.txt)[C[C[C[C[C
+bash-4.4$ sum=$(awk '{sum+=$1} END {print sum}' India.txt)[C[C[C[C[C[C[C[C[C[Cls[Kcd Subscribers/[C[C[C[C[C[C[C[C[C[Cvi ws4_means.txt [C[C[C[C[C[C[C[C[C[Cls[Kcd cs131/Worksheet4[C[C[C[C[C[C[C[C[C[C[C[C[C[2P131/Worksheet4[C[C[C[C[C[C[C[C[C[Cls[Kcd Subscribers[Kecho "scale=2; $sum/$total" | bc > ws4_means.txt[K[C[C[C[C[C[C[C[C[C[Ccd ..[K[2Ppwdecho "scale=2; $sum/$total" | bc [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'scale=2; $sum/$total'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$sum[Ksum=$(awk '{sum+=$1} END {print sum}' United_States.txt)[C[C[C[C[C[C[C[C[C[Cecho $total[Ktotal=$(cat United_States.txt | wc -l)[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@I[1@n[1@s[1@i[1P[1P[1@d[1@i[1@a[1@.[1@t[1@x[1@t[C[C[C[C[C[C[C[C[C
+bash-4.4$ total=$(cat India.txt | wc -l)[C[C[C[C[C[C[C[C[C[Csum=$(awk '{sum+=$1} END {print sum}' India.txt)[C[C[C[C[C[C[C[C[C[Cls[Kcd Subscribers/[C[C[C[C[C[C[C[C[C[Cvi ws4_means.txt [C[C[C[C[C[C[C[C[C[Cls[Kcd cs131/Worksheet4[C[C[C[C[C[C[C[C[C[C[C[C[C[2P131/Worksheet4[C[C[C[C[C[C[C[C[C[Cls[Kcd Subscribers[Kecho "scale=2; $sum/$total" | bc > ws4_means.txt> ws4_means.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.4$ ls
+India.txt  United_States.txt  ws4_means.txt
+bash-4.4$ rm ws4_means.txt 
+bash-4.4$ ls
+India.txt  United_States.txt
+bash-4.4$ cd ..
+bash-4.4$ ls
+Subscribers  ws4_means.txt  ws4.txt
+bash-4.4$ lscd ..[3Plsrm ws4_means.txt [C[C[C[C[C[C[C[C[C[Cls[Kecho "scale=2; $sum/$total" | bc >> ws4_means.txt
+bash-4.4$ vi ws4_means.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"ws4_means.txt" 2L, 55C[1;1HUnited States Mean Subscribers:23416932.90
+25658333.33
+[94m~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h
+[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[2;1H[?25h[?25lI25658333.33I[?25h[?25ln25658333.33In[?25h[?25ld25658333.33Ind[?25h[?25li25658333.33Indi[?25h[?25la25658333.33India[?25h[?25l 25658333.33[2;7H[?25h[?25lM25658333.33[2;8H[?25h[?25le25658333.33[2;9H[?25h[?25la25658333.33[2;10H[?25h[?25ln25658333.33[2;11H[?25h[?25l 25658333.33[2;12H[?25h[?25lS25658333.33[2;13H[?25h[?25lu25658333.33[2;14H[?25h[?25lb25658333.33[2;15H[?25h[?25ls25658333.33[2;16H[?25h[?25lc25658333.33[2;17H[?25h[?25lr25658333.33[2;18H[?25h[?25li25658333.33[2;19H[?25h[?25lb25658333.33[2;20H[?25h[?25le25658333.33[2;21H[?25h[?25lr25658333.33[2;22H[?25h[?25ls25658333.33[2;23H[?25h[?25l:25658333.33[2;24H[?25h[?25l 25658333.33[2;25H[?25h[?25l:25658333.33[2;26H[?25h[?25lw25658333.33[2;27H[?25h[?25lq25658333.33[2;28H[?25h[?25l25658333.3[2;38H[K[2;27H[?25h[?25l25658333.3[2;37H[K[2;26H[?25h[?25l25658333.3[2;36H[K[2;25H[?25h[24;1H[K[2;24H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"ws4_means.txt" 2L, 79C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ exit
+
+Script done on 2024-04-06 19:37:33-04:00
