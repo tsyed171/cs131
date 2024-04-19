@@ -1,0 +1,64 @@
+  393  ls
+  394  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/last.fake
+  395  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/passwd.fake
+  396  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/ps.fake
+  397  ls
+---------------------------- TASK 1 ------------------------------
+  398  cat last.fake | wc -l
+  399  grep "sp24" last.fake
+  400  grep "sp24" last.fake | wc -l
+  401  awk '/sp24/' last.fake | wc -l
+  402  awk '/sp24/' last.fake > lastsp24.fake
+  403  cat lastsp24.fake | wc -l
+  404  sed -n '/^sp24/p' lastsp24.fake
+  405  sed -n '/[^sp24]/p' lastsp24.fake
+  406  sed -n '/sp24/!p' lastsp24.fake | wc -l
+  407  cd cs131
+  408  ls
+  409  mkdir Assignment3
+  410  cd Assignment3
+  411  touch Assignment3.txt
+  412  vi Assignment3.txt 
+  413  cd ~
+  414  ls
+----------------------------------TASK 2 --------------------------------
+  415  grep "Sun" lastsp24.fake
+  416  grep "Sun" lastsp24.fake | awk '$1 {print}' 
+  417  grep "Sun" lastsp24.fake | awk '{print $1}' 
+  418  grep "Sun" lastsp24.fake | awk '{print $1}' | uniq
+  419  grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort
+  420  grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort | awk 'BEGIN{print "The list of people who worked on Sunday are:"} {print $0} END{print "Kudos to these people for putting in the work"}' 
+  421  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{print "The list of people who worked on Sunday are:"} {print $0} END{print "Kudos to these people for putting in the work"}' 
+-------------------------------- TASK 3 ------------------------------------
+  422  awk '{print $7}' lastsp224.fake
+  423  awk '{print $7}' lastsp24.fake
+  424  awk ' {print $6}' lastsp24.fake
+  425* awk '/ / $6 >= "23:00" || $6 <= "04:00" {print $6}' lastsp24.fake
+  426  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "23:00" || $6 <= "04:00") {print $6} ' 
+  427  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "23:00" || $6 <= "04:00") {print $6} ' lastsp24.fake
+  428  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "23:00" || $6 <= "04:00") {print $6} $7 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($7 >= "23:00" || $7 <= "04:00") {print $7}' lastsp24.fake
+  429  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "23:00" || $6 <= "04:00") {print $1} $7 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake
+  430  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "23:00" || $6 <= "04:00") {print $1} $7 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq
+  431  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "23:00" || $6 <= "04:00") {print $1} $7 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN{print "Night Owls List:"} {print $0} END{print "Night Owls are dope. Please ensure you get enough sleep though."}' 
+----------------------------------TASK 4 --------------------------------
+  432  awk '{print $8}' lastsp24.fake
+  433  awk '{print $9}' lastsp24.fake
+  434  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "05:00" || $6 <= "09:00") {print $1} $7 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($7 >= "05:00" || $7 <= "09:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN{print "Night Owls List:"} {print $0} END{print "Night Owls are dope. Please ensure you get enough sleep though."}'
+  435  awk '$6 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($6 >= "05:00" || $6 <= "09:00") {print $1} $7 ~ /^[0-9][0-9]:[0-9][0-9]$/ && ($7 >= "05:00" || $7 <= "09:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN{print "Early Birds List:"} {print $0} END{print "Early Birds are dope. Please ensure you get enough sleep though."}'
+----------------------------------TASK 5 --------------------------------
+  436  awk '$1 ~ /^t/' lastsp24.fake
+  437  awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq
+----------------------------------TASK 6 --------------------------------
+  438  ls
+  439  awk '$1 ~ /^a/ {print $1}' passwd.fake | sort | uniq
+  440  awk -F: '$1 ~ /^a/ && $3/2 == 0 {print $1}' passwd.fake | sort | uniq
+  441  awk -F: '$1 ~ /^a/ && $3%2 == 0 {print $1}' passwd.fake | sort | uniq
+----------------------------------TASK 7 --------------------------------
+  442  sed 's/[a-zA-Z0-9[:space:]]//g' passwd.fake | sort -u
+---------------------------------- DONE  --------------------------------
+  443  cd cs131/Assignment3/Assignment3.txt
+  444  cd cs131/Assignment3/
+  445  ls
+  446  vi Assignment3.txt 
+  447  ls
+  448  history > cmds.log
