@@ -1,0 +1,4 @@
+73 - # of entries in Workhsheet5/UnitedStates/Music.txt
+68- # of entries in Workhsheet5/UnitedStates/Entertainment.txt
+26 - # of entries in Workhsheet5/UnitedStates/Gaming.txt
+22 - # of entries in Workhsheet5/UnitedStates/Comedy.txt

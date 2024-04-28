@@ -1,0 +1,45 @@
+  464  ls
+  465  cd cs131 -------------------- Wksht 5
+  466  ls
+  467  mkdir Worksheet5
+  468  cd Worksheet5
+  469  ls
+  470  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  471  touch script.sh ----------------- PROCESS OF WRITING SCRIPT
+  472  vi script.sh
+  473  ls
+  474  cd cs131/Worksheet5
+  475  ls
+  476  vi script.sh
+  477  bash script.sh
+  478  ls
+  479  vi script.sh
+  480  awk '{print $0}' Global Youtube Statistics.csv
+  481  ls
+  482  awk '{print $0}' Global\ YouTube\ Statistics.csv 
+  483  vi script.sh
+  484  bash script.sh
+  485  ls
+  486  vi script.sh
+  487  bash script.sh
+  488  vi script.sh
+  489  bash script.sh
+  490  vi script.sh
+  491  bash script.sh
+  492  vi script.sh
+  493  bash script.sh
+  494  vi script.sh
+  495  bash script.sh
+  496  vi script.sh
+  497  bash script.sh
+  498  ls -------------ANSWERING # OF ENTRIES
+  499  cat UnitedStates/Music.txt | wc -l 
+  500  cat UnitedStates/Music.txt | wc -l > ws5.txt
+  501  cat UnitedStates/Entertainment.txt | wc -l >> ws5.txt
+  502  cat UnitedStates/Gaming.txt | wc -l >> ws5.txt
+  503  cat UnitedStates/Comedy.txt | wc -l >> ws5.txt
+  504  ls
+  505  cat ws5.txt
+  506  vi ws5.txt
+  507  cat script.sh
+  508  history > cmds.log
